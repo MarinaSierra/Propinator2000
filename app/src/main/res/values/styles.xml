@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="botones">
+        <item name="android:layout_margin">25dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="backgroundTint">@color/lightpink</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="fontFamily">@font/aclonica</item>
+        <item name="strokeColor">@color/darkpinkgrey</item>
+        <item name="strokeWidth">2dp</item>
+    </style>
+
+    <style name="delete_boton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="backgroundTint">@color/lightgrey</item>
+        <item name="fontFamily">@font/aclonica</item>
+    </style>
+</resources>

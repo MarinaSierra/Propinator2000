@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/gradient">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/aclonica"
+        android:textColor="@color/black"
+        android:text="@string/propinator2000"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@id/lineH2"
+        app:layout_constraintEnd_toEndOf="@id/main"
+        app:layout_constraintStart_toStartOf="@id/main"
+        app:layout_constraintTop_toTopOf="@id/main" />
+
+    <RadioGroup
+        android:id="@+id/gruporadio"
+        android:layout_width="124dp"
+        android:layout_height="148dp"
+        app:layout_constraintBottom_toTopOf="@id/numeros"
+        app:layout_constraintEnd_toEndOf="@id/lineV1"
+        app:layout_constraintHorizontal_bias="0.177"
+        app:layout_constraintStart_toStartOf="@id/main"
+        app:layout_constraintTop_toTopOf="@id/main"
+        app:layout_constraintVertical_bias="0.532"
+        android:textColor="@color/black">
+
+        <RadioButton
+            android:id="@+id/excelente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/aclonica"
+            android:text="@string/excelente" />
+
+        <RadioButton
+            android:id="@+id/normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/aclonica"
+            android:text="@string/normal" />
+
+        <RadioButton
+            android:id="@+id/mal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/aclonica"
+            android:text="@string/mal" />
+    </RadioGroup>
+
+    <TableLayout
+        android:layout_width="414dp"
+        android:layout_height="401dp"
+        app:layout_constraintBottom_toBottomOf="@id/main"
+        app:layout_constraintEnd_toEndOf="@id/main"
+        app:layout_constraintStart_toStartOf="@id/main"
+        app:layout_constraintTop_toTopOf="@id/lineH1">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/n1"
+                style="@style/botones"
+                android:text="@string/_1" />
+
+            <Button
+                android:id="@+id/n2"
+                style="@style/botones"
+                android:text="@string/_2" />
+
+            <Button
+                android:id="@+id/n3"
+                style="@style/botones"
+                android:text="@string/_3" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/n4"
+                style="@style/botones"
+                android:text="@string/_4" />
+
+            <Button
+                android:id="@+id/n5"
+                style="@style/botones"
+                android:text="@string/_5" />
+
+            <Button
+                android:id="@+id/n6"
+                style="@style/botones"
+                android:text="@string/_6" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/n7"
+                style="@style/botones"
+                android:text="@string/_7" />
+
+            <Button
+                android:id="@+id/n8"
+                style="@style/botones"
+                android:text="@string/_8" />
+
+            <Button
+                android:id="@+id/n9"
+                style="@style/botones"
+                android:text="@string/_9" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/borrar"
+                style="@style/botones"
+                android:text="@string/menos" />
+
+            <Button
+                android:id="@+id/n0"
+                style="@style/botones"
+                android:text="@string/_0" />
+            <Button
+                android:id="@+id/calcu"
+                style="@style/botones"
+                android:text="@string/delete"/>
+        </TableRow>
+    </TableLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lineH1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.45" />
+
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/lineH1"
+        app:layout_constraintEnd_toEndOf="@id/lineV1"
+        app:layout_constraintHorizontal_bias="0.563"
+        app:layout_constraintStart_toStartOf="@id/main"
+        app:layout_constraintTop_toTopOf="@id/gruporadio"
+        app:layout_constraintVertical_bias="0.849" />
+
+    <TextView
+        android:id="@+id/numeros"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:fontFamily="@font/aclonica"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/main"
+        app:layout_constraintEnd_toEndOf="@id/lineV1"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/lineH1"
+        app:layout_constraintVertical_bias="0.022" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lineV1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.52" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lineH2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.12" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
